@@ -161,15 +161,15 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url="https://t.me/YorktownEagleUnion",
+                                url="https://t.me/LynchBotList",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
+                                url="https://t.me/LynchBotList",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "src_btn"),
-                                url="https://github.com/AnimeKaizoku/EnterpriseALRobot/",
+                                url="https://rb.gy/pha7jy",
                             ),
                         ],
                         [
@@ -222,7 +222,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                     [
                         InlineKeyboardButton(text="Back", callback_data="help_back"),
                         InlineKeyboardButton(
-                            text="Support", url="https://t.me/YorkTownEagleUnion"
+                            text="Support", url="https://t.me/LynchBotList"
                         ),
                     ]
                 )
@@ -264,15 +264,15 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url="https://t.me/YorktownEagleUnion",
+                                url="https://t.me/LynchBotList",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
+                                url="https://t.me/LynchBotList",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
+                                url="https://rb.gy/pha7jy",
                             ),
                         ],
                         [
@@ -371,7 +371,7 @@ def help_button(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(text="Back", callback_data="help_back"),
                     InlineKeyboardButton(
-                        text="Support", url="https://t.me/YorkTownEagleUnion"
+                        text="Support", url="https://t.me/LynchBotList"
                     ),
                 ]
             )
@@ -384,7 +384,7 @@ def help_button(update: Update, context: CallbackContext):
         elif prev_match:
             curr_page = int(prev_match.group(1))
             kb = paginate_modules(curr_page - 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/LynchBotList'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -396,7 +396,7 @@ def help_button(update: Update, context: CallbackContext):
         elif next_match:
             next_page = int(next_match.group(1))
             kb = paginate_modules(next_page + 1, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/LynchBotList'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -407,7 +407,7 @@ def help_button(update: Update, context: CallbackContext):
 
         elif back_match:
             kb = paginate_modules(0, HELPABLE, "help")
-            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/YorkTownEagleUnion'),
+            # kb.append([InlineKeyboardButton(text='Support', url='https://t.me/LynchBotList'),
             #           InlineKeyboardButton(text='Back', callback_data='start_back'),
             #           InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
             query.message.edit_text(
@@ -501,7 +501,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(text="Back", callback_data="help_back"),
                     InlineKeyboardButton(
-                        text="Support", url="https://t.me/YorkTownEagleUnion"
+                        text="Support", url="https://t.me/LynchBotList"
                     ),
                 ]
             )
